@@ -16,12 +16,12 @@ class CharacterListViewModel: ViewModel() {
         return apiResponseListLiveData
     }
 
-    fun makeApiRickAndMortyCall(){
+    fun makeApiRickAndMortyCall(page:Int){
         viewModelScope.launch (Dispatchers.IO){
-            val retroInstance=
-                RetroInstance.getRetroInstance().create(RetroService::class.java)
-            val response = retroInstance.getCharacters("https://rickandmortyapi.com/api/character")
-            apiResponseListLiveData.postValue(response)
+                val retroInstance=
+                    RetroInstance.getRetroInstance().create(RetroService::class.java)
+                val response = retroInstance.getCharacters(page)
+               apiResponseListLiveData.postValue(response)
         }
     }
 

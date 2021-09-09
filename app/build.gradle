@@ -75,6 +75,9 @@ dependencies {
     def activity_version = "1.2.2"
     implementation "androidx.activity:activity-ktx:1.2.2"
 
+    //CircleImageView
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
 
 
 }
