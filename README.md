@@ -5,6 +5,8 @@ Rick And Morty is an app where the user can search all the characters of the fam
 **Features**
 
 In this application an MVVM architecture was used, also architecture components was implemented such as Live data and View model. This app consumes an API service called Rick And Morty API, and for a better performance Coroutines was added. 
+
+
 **Libraries used**
 
 * Coroutines
